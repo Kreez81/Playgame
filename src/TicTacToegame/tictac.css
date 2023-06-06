@@ -1,0 +1,84 @@
+.tictacmain{
+    background-color: rgb(111, 98, 170);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+header{
+    position: absolute;
+    font-size: 4vh;
+    font-family: "rubik",sans-serif;
+    top: 5%;
+    padding: 1% 2% 1% 2%;
+    border: 2px solid rgb(241, 220, 253);
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+  }
+  header:hover{
+    background-color: rgb(125, 110, 194);
+  }
+  .Board-container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    background-color: rgb(149, 115, 207);
+    border-radius: 20px;
+    width: 50vh;
+  }
+  .Board-row{
+    width: 100%;
+  }
+  .Board-row:nth-child(1) .Squarebox:nth-child(1){
+    border-top-left-radius: 15px;
+  }
+  .Board-row:nth-child(1) .Squarebox:nth-child(3){
+    border-bottom-left-radius: 15px;
+  }
+  .Board-row:nth-child(3) .Squarebox:nth-child(1){
+    border-top-right-radius: 15px;
+  }
+  .Board-row:nth-child(3) .Squarebox:nth-child(3){
+    border-bottom-right-radius: 15px;
+  }
+  .Squarebox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.5px solid black;
+    height: 15vh;
+    transition: 200ms ease-in-out;
+  }
+  .Squarebox:hover{
+    background-color: rgb(171, 136, 231);
+    cursor: pointer;
+  }
+  h4{
+    font-size: 5.5vh;
+  }
+  .winnerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-family: "rubik",sans-serif;
+    height: 20vh;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .playagain{
+    font-size: 2vh;
+    margin-top: 2vh;
+    background-color: rgb(171, 136, 231);
+    padding: 5px;
+    border: 1.5px dashed black;
+    cursor: pointer;
+  }
+  .playagain:hover{
+    background-color: rgb(181, 144, 244);
+  }
