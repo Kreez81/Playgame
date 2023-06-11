@@ -2,6 +2,7 @@ import React from 'react'
 import Board from './components/Board';
 import "./tictac.css";
 import gamelogo from "../assets/tictactoelogo.png";
+import { motion } from 'framer-motion';
 
 function tictacmain() {
   function refreshPage() {
@@ -9,8 +10,8 @@ function tictacmain() {
   }
   return (
     <div className='tictacmain'>
-      <header>Tic - Tac - Toe</header>
-       <img style={{height:"5.5vh",position:'absolute',top:"15%"}} src={gamelogo} alt=''/>
+      <motion.header initial={{opacity:0}} animate={{opacity:1}} transition={{duration:.5, delay:.5}}>Tic - Tac - Toe</motion.header>
+       <img style={{height:"5.8vh",position:'absolute',top:"15%", margin:"10px"}} src={gamelogo} alt=''/>
        <Board/>
        <button className='playagain' onClick={refreshPage}>Reset</button>
     </div>

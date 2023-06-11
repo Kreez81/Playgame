@@ -1,84 +1,107 @@
-.tictacmain{
-    background-color: rgb(111, 98, 170);
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+.tictacmain {
+  /* background-color: rgb(119, 105, 182); */
+  background-image: url(../assets/blurry-gradient-haikei.svg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-header{
-    position: absolute;
-    font-size: 4vh;
-    font-family: "rubik",sans-serif;
-    top: 5%;
-    padding: 1% 2% 1% 2%;
-    border: 2px solid rgb(241, 220, 253);
-    border-radius: 10px;
-    transition: 200ms ease-in-out;
-  }
-  header:hover{
-    background-color: rgb(125, 110, 194);
-  }
-  .Board-container{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    background-color: rgb(149, 115, 207);
-    border-radius: 20px;
-    width: 50vh;
-  }
-  .Board-row{
-    width: 100%;
-  }
-  .Board-row:nth-child(1) .Squarebox:nth-child(1){
-    border-top-left-radius: 15px;
-  }
-  .Board-row:nth-child(1) .Squarebox:nth-child(3){
-    border-bottom-left-radius: 15px;
-  }
-  .Board-row:nth-child(3) .Squarebox:nth-child(1){
-    border-top-right-radius: 15px;
-  }
-  .Board-row:nth-child(3) .Squarebox:nth-child(3){
-    border-bottom-right-radius: 15px;
-  }
-  .Squarebox{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2.5px solid black;
-    height: 15vh;
-    transition: 200ms ease-in-out;
-  }
-  .Squarebox:hover{
-    background-color: rgb(171, 136, 231);
-    cursor: pointer;
-  }
-  h4{
-    font-size: 5.5vh;
-  }
-  .winnerText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vh;
-    font-family: "rubik",sans-serif;
-    height: 20vh;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 20px;
-  }
-  .playagain{
-    font-size: 2vh;
-    margin-top: 2vh;
-    background-color: rgb(171, 136, 231);
-    padding: 5px;
-    border: 1.5px dashed black;
-    cursor: pointer;
-  }
-  .playagain:hover{
-    background-color: rgb(181, 144, 244);
-  }
+
+header {
+  position: absolute;
+  font-size: 4vh;
+  color: rgb(234, 200, 253);
+  font-weight: 800;
+  top: 5%;
+  padding: 1% 2% 1% 2%;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: 200ms ease-in-out;
+}
+
+.Board-container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  top: 20px;
+  margin-bottom: 15px;
+  align-content: space-evenly;
+  border-radius: 15px;
+  width: 50vh;
+  box-shadow: rgba(42, 22, 52, 0.16) 0px 10px 36px 0px, rgba(57, 23, 59, 0.06) 0px 0px 0px 1px;
+}
+
+.Board-row {
+  width: 100%;
+}
+
+.Board-row:nth-child(1) .Squarebox:nth-child(3) {
+  margin-bottom: .7vh;
+}
+
+.Board-row:nth-child(2) .Squarebox:nth-child(3) {
+  margin-bottom: .7vh;
+}
+
+.Board-row:nth-child(3) .Squarebox:nth-child(3) {
+  margin-bottom: .7vh;
+}
+
+.Squarebox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(149, 115, 207); */
+  background: rgb(162,110,251);
+background: linear-gradient(108deg, rgba(162,110,251,1) 0%, rgb(173, 139, 224) 100%);
+  margin: .7vh;
+  margin-bottom: 1.4vh;
+  border-radius: 10px;
+  height: 15vh;
+  transition: 200ms ease-in-out;
+}
+
+.Squarebox:hover {
+  /* background-color: rgb(171, 136, 231); */
+  background: linear-gradient(8deg, rgba(162,110,251,1) 0%, rgb(173, 139, 224) 100%);
+  cursor: pointer;
+}
+
+h4 {
+  color: rgb(34, 19, 50);
+  font-size: 5.6vh;
+  font-family: 'Pangolin', cursive;
+}
+
+.winnerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+  font-family: "rubik", sans-serif;
+  height: 20vh;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.playagain {
+  font-size: 2vh;
+  margin-top: 2vh;
+  background-image: linear-gradient(to right, #a573e5 0%, #c084df 100% );
+  padding: 5px;
+  border: 1.5px dashed black;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.playagain:hover {
+  background-image: linear-gradient(to right, #c084df 0%,  #a573e5 100%);
+}
