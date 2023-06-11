@@ -2,7 +2,7 @@
 
 .tictacmain {
   /* background-color: rgb(119, 105, 182); */
-  background-image: url(../assets/blurry-gradient-haikei.svg);
+  background-image: url(../TicTacToegame/assets/blurry-gradient-haikei.svg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -12,11 +12,11 @@
 }
 
 header {
-  position: absolute;
+  position: relative;
   font-size: 4vh;
   color: rgb(234, 200, 253);
   font-weight: 800;
-  top: 5%;
+  /* top: 5%; */
   padding: 1% 2% 1% 2%;
   border: 3px solid black;
   border-radius: 10px;
@@ -58,8 +58,8 @@ header {
   justify-content: center;
   align-items: center;
   /* background-color: rgb(149, 115, 207); */
-  background: rgb(162,110,251);
-background: linear-gradient(108deg, rgba(162,110,251,1) 0%, rgb(173, 139, 224) 100%);
+  background: rgb(162, 110, 251);
+  background: linear-gradient(108deg, rgba(162, 110, 251, 1) 0%, rgb(173, 139, 224) 100%);
   margin: .7vh;
   margin-bottom: 1.4vh;
   border-radius: 10px;
@@ -69,7 +69,7 @@ background: linear-gradient(108deg, rgba(162,110,251,1) 0%, rgb(173, 139, 224) 1
 
 .Squarebox:hover {
   /* background-color: rgb(171, 136, 231); */
-  background: linear-gradient(8deg, rgba(162,110,251,1) 0%, rgb(173, 139, 224) 100%);
+  background: linear-gradient(8deg, rgba(162, 110, 251, 1) 0%, rgb(173, 139, 224) 100%);
   cursor: pointer;
 }
 
@@ -95,13 +95,15 @@ h4 {
 .playagain {
   font-size: 2vh;
   margin-top: 2vh;
-  background-image: linear-gradient(to right, #a573e5 0%, #c084df 100% );
+  background-image: linear-gradient(to right, #a573e5 0%, #c084df 100%);
   padding: 5px;
-  border: 1.5px dashed black;
+  border-radius: 1vh;
+  box-shadow: 0px 0px 10px rgb(95, 65, 137);
+  border: transparent;
   cursor: pointer;
-  transition: 1s ease;
+  /* transition: 1s ease; */
 }
 
 .playagain:hover {
-  background-image: linear-gradient(to right, #c084df 0%,  #a573e5 100%);
+  background-image: linear-gradient(to right, #c084df 0%, #a573e5 100%);
 }
