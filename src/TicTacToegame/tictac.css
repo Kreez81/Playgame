@@ -2,7 +2,7 @@
 
 .tictacmain {
   /* background-color: rgb(119, 105, 182); */
-  background-image: url(../TicTacToegame/assets/blurry-gradient-haikei.svg);
+  background-image: url(./assets/tictacgradient.svg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,6 @@ header {
   padding: 1% 2% 1% 2%;
   border: 3px solid black;
   border-radius: 10px;
-  transition: 200ms ease-in-out;
 }
 
 .Board-container {
@@ -28,8 +27,8 @@ header {
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
-  top: 20px;
-  margin-bottom: 15px;
+  top: 10px;
+  margin-bottom: 5px;
   align-content: space-evenly;
   border-radius: 15px;
   width: 50vh;
