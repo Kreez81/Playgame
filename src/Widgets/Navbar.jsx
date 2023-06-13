@@ -13,7 +13,7 @@ function Navbar() {
           <h1 style={{ marginLeft: "1.5vh", fontSize: "3.5vh" }}>PlayGame</h1>
         </div></Link>
       <div style={{ position: "relative", display: "flex", float: "right", alignItems: "center", top: "-6vh" }}>
-        <img style={{ height: "4vh", marginRight: "3vh", cursor: "pointer" }} src={HelpLogo} alt='' />
+        <Link to="/Help"><img style={{ height: "4vh", marginRight: "3vh", cursor: "pointer" }} src={HelpLogo} alt='' /></Link>
         <img style={{ height: "4vh", marginRight: "4vh", cursor: "pointer" }} src={DonateLogo} alt='' />
       </div>
     </div>

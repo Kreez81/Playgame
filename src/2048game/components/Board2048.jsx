@@ -4,6 +4,7 @@ import Cell from "./Square";
 import { Board } from "../helper/index";
 import useEvent from "../helper/useEvent";
 import GameEnd from "./GameEnd";
+import { motion } from 'framer-motion';
 
 const BoardView = () => {
   const [board, setBoard] = useState(new Board());
@@ -57,11 +58,11 @@ const BoardView = () => {
           <div>{board.score}</div>
         </div>
       </div>
-      <div className="board">
+      <motion.div initial={{ left: 150, opacity: 0 }} animate={{ left: 0, opacity: 1 }} transition={{ duration: 1, type: "spring", bounce: 0.4, delay: .5 }} className="board">
         {cells}
         {tiles}
         <GameEnd onRestart={resetGame} board={board} />
-      </div>
+      </motion.div>
     </div>
   );
 };
