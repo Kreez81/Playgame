@@ -20,6 +20,7 @@ function Help() {
           alert("Message sent")
       }, (error) => {
           console.log(error.text);
+          alert("Something went wrong")
       });
       form.current.reset();
   };
