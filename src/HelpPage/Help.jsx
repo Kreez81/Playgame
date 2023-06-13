@@ -9,10 +9,6 @@ function Help() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-  //   var Params = {
-  //     full_name: document.getElementById("full_name").value,
-  //     email_id: document.getElementById("email_id").value
-  // };
 
     emailjs.sendForm('service_9iratng', 'template_c0s2qop', form.current, 'slqbPA4Z8ny6DVV6H')
       .then((result) => {
