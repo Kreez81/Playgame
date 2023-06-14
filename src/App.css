@@ -83,3 +83,50 @@
         display: none;
     }
 }
+input{
+    height: 4.5vh;
+    background-color: rgb(40, 76, 105) !important;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.8vh;
+    font-weight: 500;
+    padding-left: 2vh;
+    color: rgb(193, 255, 242);
+}
+form{
+    height: 70vh;
+    width: 40%;
+    line-height: 5vh;
+}
+label{
+    position: relative;
+    margin-top: 2vh;
+    left: 1vh;
+    font-weight: 500;
+}
+textarea{
+    height: 5vh;
+    background-color: rgb(40, 76, 105);
+    color: rgb(193, 255, 242);
+    border: none;
+    border-radius: 20px;
+    padding-left: 2vh;
+    font-size: 1.8vh;
+    font-weight: 500;
+    padding-top: 1vh;
+    overflow-y: hidden;
+}
+.formdiv{
+    background-image: url(./assets/helpgradient.svg);
+    background-size: cover;
+}
+.sendbutt:hover{
+    background-color:rgb(34, 63, 86) ;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-text-fill-color: rgb(193, 255, 242);
+    transition: background-color 5000s ease-in-out 0s;
+}

@@ -24,7 +24,7 @@ function Help() {
   return (
     <>
     <Navbar />
-    <div style={{backgroundColor:"#19758c", fontSize:"3vh", display:"flex", justifyContent:"center",alignItems:"center",height:"100vh"}}>
+    <div className='formdiv' style={{fontSize:"3vh", display:"flex", justifyContent:"center",alignItems:"center",height:"100vh"}}>
     <form style={{display:"flex", flexDirection:"column"}} ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" id='full_name' name="full_name" />
@@ -32,7 +32,9 @@ function Help() {
       <input type="email" id='email_id' name="email_id" />
       <label>Message</label>
       <textarea name="message" />
-      <input type="submit" value="Send" />
+      <input className='sendbutt' type="submit" 
+      style={{cursor:"pointer", position:"relative", top:"5vh", width:"30%",paddingLeft:"0", display:"flex", 
+      alignSelf:"center", justifyContent:"center", transition:"100ms ease-in-out"}} value="Send" />
     </form>
     </div>
     <Botbar />

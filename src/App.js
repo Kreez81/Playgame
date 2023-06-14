@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <Routes location={location} key={location.pathname}>
-       {/* <Tictactoe /> */}
        <Route path="/" element = {<Main />} />
        <Route path="/TicTacToe" element={<Tictactoe />} />
        <Route path="/game2048" element={<Game2048 />} />
