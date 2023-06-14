@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import Navbar from '../Widgets/Navbar'
 import emailjs from "@emailjs/browser";
 import Botbar from '../Widgets/Botbar';
+import { motion } from 'framer-motion';
 
 function Help() {
 
@@ -25,7 +26,8 @@ function Help() {
     <>
     <Navbar />
     <div className='formdiv' style={{fontSize:"3vh", display:"flex", justifyContent:"center",alignItems:"center",height:"100vh"}}>
-    <form style={{display:"flex", flexDirection:"column"}} ref={form} onSubmit={sendEmail}>
+    <motion.form initial={{ scale:.9, opacity: 0 }} animate={{ scale:1, opacity: 1 }} transition={{ duration: 1,type:"spring",bounce:.5, delay: .5 }}
+    style={{display:"flex", flexDirection:"column"}} ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" id='full_name' name="full_name" />
       <label>Email</label>
@@ -35,7 +37,7 @@ function Help() {
       <input className='sendbutt' type="submit" 
       style={{cursor:"pointer", position:"relative", top:"5vh", width:"30%",paddingLeft:"0", display:"flex", 
       alignSelf:"center", justifyContent:"center", transition:"100ms ease-in-out"}} value="Send" />
-    </form>
+    </motion.form>
     </div>
     <Botbar />
     </>
